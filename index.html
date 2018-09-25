@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+
+<body>
+<form name="Nuevo usuario" method="post">
+    <strong>Regístrese</strong>
+    <br>
+    Nombre de usuario:<br>
+    <input type="text" name="usuario" value="" minlength="4" maxlength="40" required pattern="[A-Za-z0-9]+">
+    <br>
+    Contraseña:<br>
+    <input type="password" name="password" value="" minlenght="11" required>
+    <br>
+    Email:<br>
+    <input type="email" name="Email" value="" required>
+    <br>
+    <strong>Inserte sus datos personales</strong> 
+    <br>
+    Nombre:<br>
+    <input type="text" name="nombre" value="" required pattern=>
+    <br>
+    Apellidos:<br>
+    <input type="text" name="apellidos" value="" required>
+    <br>
+    Direccion:<br>
+    <input type="textarea" name="direc" value="">
+    <br>
+    Estudios:<br>
+    <input type="text" list="items">
+    <datalist id="items">
+        <option value="primarios">primarios</option>
+        <option value="secundarios">secundarios</option>
+        <option value="FP medio">FP medio</option>
+        <option value="FP superior">FP superior</option>
+        <option value="Diplomatura">Diplomatura</option>
+        <option value="Licenciatura">Licenciatura</option>
+    </datalist>
+    <br>
+    Inscrito en el Sistema de Garantia Juvenil:
+    <input type="checkbox" name="checkbox">
+    <br>
+    <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
